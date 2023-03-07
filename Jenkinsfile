@@ -4,7 +4,7 @@ pipeline {
     stages {
         stage('Build') {
             steps {
-                withCredentials([string(credentialsId: 'jenkins-pecobe', variable: 'GITHUB_TOKEN')]) {
+                withCredentials([string(credentialsId: 'Jenkins-Pecobe', variable: 'GITHUB_TOKEN')]) {
                     sh 'echo $GITHUB_TOKEN > token.txt'
                     sh 'cat token.txt'
                 }
