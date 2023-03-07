@@ -13,7 +13,7 @@ pipeline {
         stage('Test') {
             steps {
                 dir('build') {
-                    sh './hello-world'
+                    sh './exercise_1'
                 }
             }
         }
